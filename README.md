@@ -13,6 +13,9 @@ RUN-ICON algorithm for unsupervised learning
 
 5. Centres (both normalized and de-normalized) are output in a file for future use
 
+6. The code outputs from 10 different runs the frequency of appearence of dominant clustering configuration (in %) for the "i_cluster" variable, which denotes the number of clusters you want to separate your data in. An average of these 10 values is calculated. This represents the confidence. The higher the mean frequency of occurrence, the higher the confidence.
+7. Calculate the difference between the maximum and minimum of the confidence values. This represents the uncertainty. The lower the difference, t e lower the uncertainty is
+
 
 PLEASE NOTE: If you want to test frequency of occurrence of dominant centres for different number of clusters 
               you must modify variable "i_cluster" manually in the code
